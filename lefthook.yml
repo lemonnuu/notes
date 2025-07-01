@@ -1,0 +1,38 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://lefthook.dev/configuration/
+#
+# pre-push:
+#   jobs:
+#     - name: packages audit
+#       tags:
+#         - frontend
+#         - security
+#       run: yarn audit
+#
+#     - name: gems audit
+#       tags:
+#         - backend
+#         - security
+#       run: bundle audit
+#
+commit-msg:
+  parallel: false
+  jobs:
+    - name: validate-commit-message
+      run: |
+        pnpm --no-install commitlint --edit "{1}"
+      fail_text: |
+        ❌ 提交消息不符合规范！
+        ✅ 示例: feat: 添加新功能
+        📖 规范: https://www.conventionalcommits.org/
+
+pre-commit:
+  parallel: false
+  jobs:
+    - name: lint-staged
+      run: pnpm --no-install lint-staged
+      skip:
+        - merge-commit
+        - rebase-commit

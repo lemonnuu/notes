@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.biome": "explicit",
+    "source.action.useSortedKeys.biome": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript][typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}

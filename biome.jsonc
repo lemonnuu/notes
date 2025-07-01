@@ -1,0 +1,59 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedKeys": "on"
+      }
+    },
+    "enabled": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "packages/**/*.ts",
+      "packages/**/*.tsx",
+      "packages/**/*.js",
+      "packages/**/*.mjs",
+      "packages/**/*.cjs",
+      "packages/**/*.jsx",
+      "scripts/**/*.ts",
+      "scripts/**/*.js",
+      "scripts/**/*.mjs",
+      "scripts/**/*.cjs"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded", // 箭头函数参数按需加括号，例如 `(a) => a` 或 `a => a`
+      "quoteStyle": "single", // 使用单引号
+      "trailingCommas": "all" // 箭头函数参数按需加括号，例如 `(a) => a` 或 `a => a`
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "performance": {
+        "noAccumulatingSpread": "off", // 允许展开运算符累积 (如 `[...arr, ...arr2]`)
+        "noDelete": "off" // 允许展开运算符累积 (如 `[...arr, ...arr2]`)
+      },
+      "recommended": true,
+      "security": {
+        "noDangerouslySetInnerHtml": "off" // 允许 React 使用 dangerouslySetInnerHTML
+      },
+      "style": {
+        "noNonNullAssertion": "off" // 允许非空断言 (`foo!.bar`)
+      }
+    }
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": true,
+    "useIgnoreFile": true
+  }
+}

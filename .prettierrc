@@ -1,0 +1,12 @@
+{
+  "singleQuote": true,
+  "plugins": ["prettier-plugin-packagejson"],
+  "overrides": [
+    {
+      "files": ["*.jsonc"],
+      "options": {
+        "trailingComma": "none"
+      }
+    }
+  ]
+}

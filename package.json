@@ -1,0 +1,41 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Jelly",
+  "main": "index.js",
+  "scripts": {
+    "check-dependency-version": "check-dependency-version-consistency . --dep-type devDependencies && echo 0",
+    "check-spell": "pnpm cspell && heading-case",
+    "dev:docs": "pnpm --filter blog dev",
+    "format": "prettier . --write && biome check --write && heading-case --write",
+    "lint": "biome check --diagnostic-level=warn && prettier . --check && pnpm run check-spell"
+  },
+  "lint-staged": {
+    "*.{md,mdx,css,less,scss,json,jsonc,json5}": "prettier --write",
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "biome check --write"
+    ],
+    "package.json": [
+      "pnpm run check-dependency-version",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "check-dependency-version-consistency": "^5.0.1",
+    "commitlint": "^19.8.1",
+    "cspell": "^9.1.2",
+    "cspell-ban-words": "^0.0.4",
+    "heading-case": "^0.1.6",
+    "lefthook": "^1.11.14",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.17"
+  },
+  "packageManager": "pnpm@10.12.3"
+}
