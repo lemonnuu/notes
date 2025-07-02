@@ -164,3 +164,6 @@ weibo
 weixin
 zeabur
 zhihu
+Turborepo
+shadcn-ui
+menorepo

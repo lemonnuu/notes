@@ -9,7 +9,7 @@
   "scripts": {
     "check-dependency-version": "check-dependency-version-consistency . --dep-type devDependencies && echo 0",
     "check-spell": "pnpm cspell && heading-case",
-    "dev:docs": "pnpm --filter blog dev",
+    "dev": "pnpm --filter blog dev",
     "format": "prettier . --write && biome check --write && heading-case --write",
     "lint": "biome check --diagnostic-level=warn && prettier . --check && pnpm run check-spell"
   },
