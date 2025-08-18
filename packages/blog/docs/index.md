@@ -6,6 +6,6 @@ hero:
   text: A cool website!
   tagline: This is the tagline
   image:
-    src: /rspress-icon.png
+    src: /logo/jelly-monster.png
     alt: Logo
 ---
