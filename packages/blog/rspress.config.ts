@@ -9,13 +9,9 @@ export default defineConfig({
   },
   root: path.join(__dirname, 'docs'),
   themeConfig: {
-    socialLinks: [
-      {
-        content: 'https://github.com/web-infra-dev/rspress',
-        icon: 'github',
-        mode: 'link',
-      },
-    ],
+    enableAppearanceAnimation: true, // 在浅色和深色主题之间切换时是否有动画效果
+    enableContentAnimation: true, // 在页面切换的时候是否显示转场动画
+    enableScrollToTop: true, // 启用文档上的滚动到顶部按钮
   },
-  title: 'My Site',
+  title: 'Jelly Monster',
 });

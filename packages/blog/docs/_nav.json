@@ -1,16 +1,29 @@
 [
   {
-    "text": "Guide",
-    "link": "/guide/",
-    "activeMatch": "/guide/"
+    "text": "文稿",
+    "link": "/manuscript/Nx",
+    "activeMatch": "/manuscript/"
   },
   {
-    "text": "Hello world",
-    "link": "/hello/",
-    "activeMatch": "/hello/"
+    "text": "React 源码",
+    "link": "/react-source",
+    "activeMatch": "/react-source/"
   },
   {
-    "text": "API",
-    "link": "https://rspress.rs/api/index.html"
+    "text": "更多",
+    "items": [
+      {
+        "text": "关于我",
+        "link": "/more/about-me"
+      },
+      {
+        "text": "念念碎",
+        "link": "/more/moments"
+      },
+      {
+        "text": "时间线",
+        "link": "/more/timeline"
+      }
+    ]
   }
 ]
