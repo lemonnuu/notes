@@ -10,20 +10,8 @@
     "activeMatch": "/react-source/"
   },
   {
-    "text": "更多",
-    "items": [
-      {
-        "text": "关于我",
-        "link": "/more/about-me"
-      },
-      {
-        "text": "念念碎",
-        "link": "/more/moments"
-      },
-      {
-        "text": "时间线",
-        "link": "/more/timeline"
-      }
-    ]
+    "text": "关于我",
+    "link": "/about-me",
+    "activeMatch": "/about-me/"
   }
 ]
