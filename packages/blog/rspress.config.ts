@@ -17,12 +17,12 @@ export default defineConfig({
     enableContentAnimation: true, // 在页面切换的时候是否显示转场动画
     enableScrollToTop: true, // 启用文档上的滚动到顶部按钮
     footer: {},
-    hideNavbar: 'auto', // 控制隐藏导航栏行为 "always" | "auto" | "never"
+    hideNavbar: 'never', // 控制隐藏导航栏行为 "always" | "auto" | "never"
     lastUpdated: false, // 是否显示最后更新时间
     lastUpdatedText: '最后更新于', // 最后更新时间的文本
     nextPageText: '下一页', // 下一页的文本
     outline: true, // 是否显示右侧大纲
-    outlineTitle: '页面导航', // 在右侧边栏中配置大纲的标题
+    outlineTitle: '页面大纲', // 在右侧边栏中配置大纲的标题
     overview: {
       // overview 预览页/组件的配置项
       filterNameText: '过滤',
