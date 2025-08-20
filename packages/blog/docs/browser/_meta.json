@@ -1,0 +1,55 @@
+[
+  {
+    "type": "file",
+    "name": "01-browser-principle"
+  },
+  {
+    "type": "dir",
+    "name": "rendering-process",
+    "label": "渲染进程",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "network-process",
+    "label": "网络进程",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "performance-security",
+    "label": "性能与安全",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "devtools",
+    "label": "调试控制台",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "dom",
+    "label": "DOM",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "bom",
+    "label": "BOM",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "other",
+    "label": "其他",
+    "collapsible": true,
+    "collapsed": true
+  }
+]

@@ -5,6 +5,11 @@
     "activeMatch": "/manuscript/"
   },
   {
+    "text": "浏览器相关",
+    "link": "/browser/01-browser-principle",
+    "activeMatch": "/browser/"
+  },
+  {
     "text": "React 源码",
     "link": "/react-source",
     "activeMatch": "/react-source/"
