@@ -142,6 +142,6 @@ Nx 可以自动检测项目之间的依赖关系，然而，你需要指定这�
 - Nx 核心，缓存、管道的概念
 - Nx Plugin
 - Nx 与模块联邦
-- Nx Cloud 最后吧
+- Nx Cloud 最后吧，嗯
 
 Nx 的文章：https://juejin.cn/user/4353721774379054/posts
