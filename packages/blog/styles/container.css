@@ -1,0 +1,9 @@
+/**
+  * https://github.com/web-infra-dev/rspress/blob/main/packages/core/src/node/mdx/remarkPlugins/containerSyntax.ts
+  * 在 plugins-mdx 的 remarkPureContainer 插件中，已移除了无标题容器的标题样式，并且新增了 rspress-directive-pure 类  
+  * 增加 rspress-directive-pure class 自定义无标题容器样式
+*/
+
+.rspress-doc .rspress-directive.rspress-directive-pure {
+  padding: 12px 24px;
+}

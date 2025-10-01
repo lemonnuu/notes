@@ -2,9 +2,12 @@ import * as path from 'node:path';
 import { defineConfig } from '@rspress/core';
 import { remarkPureContainer } from 'plugins-mdx';
 
+const BASE_PATH = '/notes/';
+
 export default defineConfig({
-  base: '/notes/',
+  base: BASE_PATH,
   description: '果冻怪的魔法书，基于 Rspress 构建。',
+  globalStyles: path.join(__dirname, 'styles/index.css'),
   icon: '/logo/jelly-monster.png',
   logo: {
     dark: '/logo/jelly-monster.png',
@@ -39,7 +42,7 @@ export default defineConfig({
     searchSuggestedQueryText: '可更换不同的关键字后重试', // 没有搜索结果时的建议查询提示文本
     socialLinks: [
       {
-        content: '/about-me/wechat-qrcode.jpg',
+        content: path.join(BASE_PATH, 'about-me/wechat-qrcode.jpg'),
         icon: 'wechat',
         mode: 'img',
       },
