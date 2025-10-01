@@ -6,7 +6,7 @@
       "cache": true
     },
     "dev": {
-      "dependsOn": ["^dev"],
+      "dependsOn": ["^build"],
       "cache": true
     },
     "preview": {

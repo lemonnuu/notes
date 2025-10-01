@@ -1,5 +1,6 @@
 import * as path from 'node:path';
 import { defineConfig } from '@rspress/core';
+import { remarkPureContainer } from 'plugins-mdx';
 
 export default defineConfig({
   base: '/notes/',
@@ -10,6 +11,9 @@ export default defineConfig({
     light: '/logo/jelly-monster.png',
   },
   logoText: '果冻怪',
+  markdown: {
+    remarkPlugins: [remarkPureContainer],
+  },
   root: path.join(__dirname, 'docs'),
   themeConfig: {
     darkMode: true, // 是否出现暗黑模式/白天模式切换按钮
