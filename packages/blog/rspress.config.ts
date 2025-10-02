@@ -8,10 +8,10 @@ export default defineConfig({
   base: BASE_PATH,
   description: '果冻怪的魔法书，基于 Rspress 构建。',
   globalStyles: path.join(__dirname, 'styles/index.css'),
-  icon: '/logo/jelly-monster.png',
+  icon: '/logo/jelly-monster.jpg',
   logo: {
-    dark: '/logo/jelly-monster.png',
-    light: '/logo/jelly-monster.png',
+    dark: '/logo/jelly-monster.jpg',
+    light: '/logo/jelly-monster.jpg',
   },
   logoText: '果冻怪',
   markdown: {

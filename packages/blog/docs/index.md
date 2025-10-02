@@ -6,6 +6,6 @@ hero:
   text: A cool website!
   tagline: This is the tagline
   image:
-    src: /logo/jelly-monster.png
+    src: /logo/jelly-monster.jpg
     alt: Logo
 ---
