@@ -1,0 +1,13 @@
+/* 主题色 */
+:root {
+  /* 主品牌紫色 */
+  --rp-c-brand: #7d4aff;
+  /* 浅色变体 */
+  --rp-c-brand-light: #9b76ff;
+  --rp-c-brand-lighter: #baa1ff;
+  /* 深色变体 */
+  --rp-c-brand-dark: #5f2ee5;
+  --rp-c-brand-darker: #4319cc;
+  /* 浅色透明背景 */
+  --rp-c-brand-tint: rgba(125, 74, 255, 0.1);
+}
